@@ -8,6 +8,6 @@ Follow the latest updated docs in the official docs as the below steps might bec
 * Go to the [Official Docs of Google Cloud SDK](https://cloud.google.com/sdk/docs/quickstart-windows) and download the [Cloud SDK](https://dl.google.com/dl/cloudsdk/channels/rapid/GoogleCloudSDKInstaller.exe)
 * Once you have downloaded the SDK, Run it.
 
-
-    gcloud config set compute/zone us-central1-a
-
+```
+gcloud config set compute/zone us-central1-a
+```
