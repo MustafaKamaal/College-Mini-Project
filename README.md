@@ -77,3 +77,17 @@ kubectl get svc -w
 * You will see an external ip in some time and you can hit that ip to see the result
 ![Out](https://github.com/MustafaKamaal/College-Mini-Project/blob/master/KubeBoy/out.png)
 * As there are 3 Pods, the resulting output may or may not vary as the output is hostname. If you wanna see the change try hitting the ip multiple times and you'll see the change after a few clicks.
+
+## Deleting Everything
+* Delete the Deployment
+```
+kubectl delete deployment hello-server
+```
+* Delete the Service
+```
+kubectl delete service hello-server
+```
+* Delete the Cluster
+```
+gcloud container clusters delete kuber
+```
