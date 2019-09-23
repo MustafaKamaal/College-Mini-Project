@@ -9,5 +9,5 @@ Follow the latest updated docs in the official docs as the below steps might bec
 * Once you have downloaded the SDK, Run it.
 * ![Image](https://images.pexels.com/photos/67636/rose-blue-flower-rose-blooms-67636.jpeg?auto=compress&cs=tinysrgb&dpr=2&h=750&w=1260)
 
---gcloud config set compute/zone us-central1-a
+  gcloud config set compute/zone us-central1-a
 
