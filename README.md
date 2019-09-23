@@ -33,8 +33,7 @@ gcloud config set compute/zone us-central1-a
 * Notice that I'm using APIs in the above command which means that multiple APIs are enabled (Both Compute Engine and Kubernetes Engine)
 
 
-'''
+```
 kubectl get nodes
-
 kubectl get pods
-'''
+```
