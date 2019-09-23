@@ -35,5 +35,6 @@ gcloud config set compute/zone us-central1-a
 
 '''
 kubectl get nodes
+
 kubectl get pods
 '''
