@@ -5,7 +5,10 @@ The goal of this Project was to launch multiple containers LoadBalanced in a Kub
 # The Project Environment:
  This indicates the environment this Project is tested or done on
 - OS = Windows
-- Kubernetes Environment = Google Cloud
+- Kubernetes Environment = Google Kubernetes Engine(GKE)
+- Environment = Google Cloud
+- Used Services in Google Cloud = Compute Engine, GKE
+- Billed for = Compute Engine Nodes - 3, Compute Engine Load Balancer
 - Tools = gcloud, kubectl
 
 In this Project we'll stick to the Command Line for the most part as it takes care of a lot of defaults
