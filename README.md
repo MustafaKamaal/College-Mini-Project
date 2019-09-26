@@ -14,7 +14,7 @@ The goal of this Project was to launch multiple containers LoadBalanced in a Kub
 In this Project we'll stick to the Command Line for the most part as it takes care of a lot of defaults
 
 # Architecture
- ![Architecture]()
+ ![Architecture](https://github.com/MustafaKamaal/College-Mini-Project/blob/master/KubeBoy/Project.png)
  The GKE creates 3 Compute Engine Instances and forms a Kubernetes Cluster with them, while the Master is managed by the Google Cloud. On that Compute Engine Instances our Pods are Run and Load Balanced through a Compute Engine Load Balancer.
 # Setting Environment
 Follow the latest updated docs in the official docs as the below steps might become out of date
