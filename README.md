@@ -13,6 +13,9 @@ The goal of this Project was to launch multiple containers LoadBalanced in a Kub
 
 In this Project we'll stick to the Command Line for the most part as it takes care of a lot of defaults
 
+# Architecture
+ ![Architecture]()
+ The GKE creates 3 Compute Engine Instances and forms a Kubernetes Cluster with them, while the Master is managed by the Google Cloud. On that Compute Engine Instances our Pods are Run and Load Balanced through a Compute Engine Load Balancer.
 # Setting Environment
 Follow the latest updated docs in the official docs as the below steps might become out of date
 * Go to the [Official Docs of Google Cloud SDK](https://cloud.google.com/sdk/docs/quickstart-windows), download the [Cloud SDK](https://dl.google.com/dl/cloudsdk/channels/rapid/GoogleCloudSDKInstaller.exe) and run it.
