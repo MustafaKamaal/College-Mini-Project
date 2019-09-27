@@ -7,9 +7,13 @@ The goal of this Project was to launch multiple containers LoadBalanced in a Kub
 - OS = Windows
 - Kubernetes Environment = Google Kubernetes Engine(GKE)
 - Environment = Google Cloud
+- Location = us-central1-a
+- Container Runtime = Containerd
+- Container Orchestrator = Kubernetes
 - Used Services in Google Cloud = Compute Engine, GKE
 - Billed for = Compute Engine Nodes - 3, Compute Engine Load Balancer - 1
 - Tools = gcloud, kubectl
+- In case of failure of nodes, the nodes will be auto-repaired
 
 In this Project we'll stick to the Command Line for the most part as it takes care of a lot of defaults
 
@@ -47,7 +51,7 @@ gcloud config set compute/zone us-central1-a
 * Notice that I'm using APIs in the above command which means that multiple APIs are enabled (Both Compute Engine and Kubernetes Engine)
 ## Cluster Creation and Configuration
 ```
-gcloud container clusters create kuber
+gcloud container clusters create --image-type=COS_CONTAINERD kuber
 ```
 * The above command will create a cluster named 'kuber'. As there are a few policies for cluster naming, be sure to watch out for that
 ```
@@ -95,7 +99,11 @@ kubectl delete deployment hello-server
 ```
 kubectl delete service hello-server
 ```
+Or you could alternatively delete everything with a single command
 * Delete the Cluster
 ```
 gcloud container clusters delete kuber
 ```
+This might take a while so Hold on 
+
+Finally you have reached the end of the Demo, you could explore even further in official docs of Kubernetes found at kubernetes.io
